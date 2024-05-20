@@ -48,7 +48,7 @@ Route::get('/comics', function () {
             ]
             ],
         'footers' => ["Characters","Comics","Movies","TV","Games","Videos","News"],
-        'socials' => ["facebook.png", "periscope.png", "pinterest.png", "twitter.png", "youtube.png"]
+        'socials' => ["facebook", "periscope", "pinterest", "twitter", "youtube"]
         
     ];
    

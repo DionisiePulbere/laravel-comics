@@ -15,7 +15,7 @@
                 <span>follow us</span>
                 @foreach ($socials as $social)
                     <a href="#">
-                        <img src="{{ Vite::asset('resources/img/footer-' . $social ) }}" alt="">
+                        <img src="{{ Vite::asset('resources/img/footer-' . $social . '.png' ) }}" alt="">
                     </a>
                 @endforeach
             </div>
