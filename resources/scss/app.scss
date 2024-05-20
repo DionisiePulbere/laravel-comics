@@ -1,0 +1,100 @@
+@use './partials/variables' as *;
+@use './partials/header' as *;
+
+
+@import '~bootstrap/scss/bootstrap';
+
+.poster{
+    background-color: #1C1C1C;
+    .container{
+        padding-top: 100px;
+
+        position: relative;
+        .ms-badge{
+            position: absolute;
+            top: -30px;
+            left: -4px;
+            background-color: $brand_primary;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        
+        .btn{
+            text-transform: uppercase;
+            padding: 10px 60px;  
+        }
+        
+        .card {
+            background-color: transparent;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+
+            .card-body{
+                padding: 16px 0 !important;
+            }
+            
+            
+            img{
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+}
+
+.marketing{
+    background-color: $brand_primary;
+
+    img{
+        width: 50px;
+    }
+
+    .text{
+        text-transform: uppercase;
+        color: white;
+
+    }
+}
+
+footer{
+    .top{
+        background-image: url('../img/footer-bg.jpg');
+        height: 400px;
+        li{
+            color: lightgrey;
+        }
+    } 
+    .bottom{
+        background-color: #303030;
+        min-height: 70px;
+        .ms-btn{
+            border: $brand_primary 2px solid;
+            color: white;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+        span{
+            color: $brand_primary;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        a{
+            text-decoration: none;
+            margin-left: 14px;
+        }
+    }
+}
+
+
+
+
+
+

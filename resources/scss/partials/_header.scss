@@ -1,0 +1,26 @@
+@use './variables' as *;
+
+.jumbo{
+    background-image: url('../img/jumbotron.jpg');
+    height: 400px;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 10px;
+    &.active{
+        a{
+            color: $brand_primary;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #464646;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+
+
