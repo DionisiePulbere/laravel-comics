@@ -14,10 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-   
+    $data = [
+    'footers' => ["Characters","Comics","Movies","TV","Games","Videos","News"],
+    'socials' => ["facebook", "periscope", "pinterest", "twitter", "youtube"]
 
-    return view('home');
-});
+    ];
+    return view('home', $data);
+})->name('home');
 
 Route::get('/comics', function () {
     $comics = config('comics');
@@ -53,5 +56,5 @@ Route::get('/comics', function () {
     ];
    
     return view('comics', $data);
-});
+})->name('comics');
 
